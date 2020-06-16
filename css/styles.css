@@ -8,6 +8,10 @@
 @import url(https://fonts.googleapis.com/css2?family=NanumGothic&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
 
+.col-lg-12 > .divider-custom > .divider-custom-line {
+  margin-top: 20px;
+}
+
 .masthead > h1 {
   font-family: "Pacifico", cursive;
   font-size: 20pt;
