@@ -676,53 +676,6 @@
     </section>
 
 
-    <div id="map-canvas" style="height: 600px"></div> 
-
-    <!--javascript 소스코드-->
-<script type="text/javascript">
-  function initialize() {
-          var myLatlng;
-          var map;
-          var marker;
-  
-          myLatlng = new google.maps.LatLng(37.482627, 126.928510);  
-  
-         
-  var mapOptions = {
-                      zoom: 17, 
-                      center: myLatlng,
-                      mapTypeId: google.maps.MapTypeId.ROADMAP,
-                      scrollwheel: false, 
-                      draggable: false
-          };
-  
-          map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-          
-          var contentString ='<p style="line-height: 20px;">위치정보이름</p><p>위치정보주소</p>'; 
-  
-          var infowindow = new google.maps.InfoWindow({
-                  content: contentString
-          });
-  
-          marker = new google.maps.Marker({
-                  position: myLatlng,
-                  map: map,
-                  title: 'Marker'
-          });
-  
-          infowindow.open(map, marker);
-  
-          google.maps.event.addListener(marker, 'click', function () {
-                  infowindow.open(map, marker);
-          });
-  }
-  
-  google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
-  
-  <!-- Google API Key 값을 생성하여 입력하세요. -->
-  <script async defer src="https://maps.googleapis.com/maps/api/js? KEY=AIzaSyAGYhJOkp_oAeWXb5k2Lq42a3kO55UsbAE&callback=initMap">
-  </script>
     <footer class="footer text-center">
       <div class="container">
         <div class="row">
@@ -766,8 +719,6 @@
     <script src="assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!--gmap js 임포트-->
-    <script type="text/java script" src="https://maps.googleapis.com/maps/api/js? sensor=true">
 
   </body>
 </html>
